@@ -31,18 +31,87 @@
   <main>
     <!-- TIMELINE SECTION -->
     <section id="timeline" class="timeline">
-      <h2>Appearances Timeline</h2>
-      <div class="timeline-container">
-        <!-- Timeline items will go here -->
-      </div>
-    </section>
+        <h2>Appearances Timeline</h2>
+        <div class="timeline-container">
+          <!-- TIMELINE ITEM 1 -->
+          <div class="timeline-item" data-title="Marvel Spotlight #5" data-year="1971" data-desc="Ghost Rider">
+            <img src="assets/images/timeline1.jpg" alt="Ghost Rider #1 cover">
+            <div class="timeline-info">
+              <h3>Marvel Spotlight (1971) #5</h3>
+              <span>1972</span>
+            </div>
+          </div>
+          <!-- TIMELINE ITEM 2 -->
+          <div class="timeline-item" data-title="Ghost Rider #1" data-year="1973" data-desc="A Woman Possessed!">
+            <img src="assets/images/timeline2.jpg" alt="Marvel Spotlight #5 cover">
+            <div class="timeline-info">
+              <h3>Ghost Rider (1973) #1</h3>
+              <span>1973</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-title="Ghost Rider (1973) #9" data-year="1974" data-desc="The Hell-Bound Hero!">
+            <img src="assets/images/timeline3.jpg" alt="Marvel Spotlight #5 cover">
+            <div class="timeline-info">
+              <h3>Ghost Rider (1973) #9</h3>
+              <span>1974</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-title="Champions (1975) #1" data-year="1975" data-desc="The World Still Needs... The Champions!">
+            <img src="assets/images/timeline4.jpg" alt="Marvel Spotlight #5 cover">
+            <div class="timeline-info">
+              <h3>Champions (1975) #1</h3>
+              <span>1975</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-title="Ghost Rider (1973) #69" data-year="1982" data-desc="Personal Demons">
+            <img src="assets/images/timeline5.jpg" alt="Marvel Spotlight #5 cover">
+            <div class="timeline-info">
+              <h3>Ghost Rider (1973) #69</h3>
+              <span>1982</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-title="Midnight Sons Unlimited (1993) #1" data-year="1993" data-desc="Eyes of the Beholder">
+            <img src="assets/images/timeline6.jpg" alt="Marvel Spotlight #5 cover">
+            <div class="timeline-info">
+              <h3>Midnight Sons Unlimited (1993) #1 [A Story]</h3>
+              <span>1993</span>
+            </div>
+          </div>
+          <!-- Add 4 more items similarly… -->
+        </div>
+      
+       <!-- Detail overlay (hidden by default) -->
+<div class="timeline-detail" id="timeline-detail">
+    <button class="close-detail">×</button>
+    <h3 id="detail-title"></h3>
+    <p id="detail-year"></p>
+    <p id="detail-desc"></p>
+  </div>
+  
+      </section>      
 
     <!-- GALLERY SECTION -->
     <section id="gallery" class="gallery">
       <h2>Gallery</h2>
       <div class="gallery-grid">
-        <!-- Gallery images will go here -->
-      </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Ghost Rider Art 1">
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Ghost Rider Art 2">
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200?text=Art+3" alt="Ghost Rider Art 3">
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200?text=Art+4" alt="Ghost Rider Art 4">
+        </div>
+        <!-- Add as many as you like (8–12 total) -->
+      </div>      
     </section>
 
     <!-- AUDIO PLAYER SECTION -->
@@ -52,6 +121,11 @@
         <!-- Custom play/pause and progress bar -->
       </div>
     </section>
+
+    <!-- Lightbox Overlay -->
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="">
+  </div>  
   </main>
 
   <!-- FOOTER -->
